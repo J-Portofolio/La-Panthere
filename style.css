@@ -1,10 +1,22 @@
+:root {
+    /* Colorimétrie conservant la charte graphique et conforme WCAG AAA */
+    --primary-bg-color: #F3976C;
+    --primary-bg-color-hover: #EF763E;
+    --primary-bg-text-color: #212121;
+    --primary-bg-text-color-hover: #050505;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    /*background: #FFF; Inutile, la couleur de base 'transparent', permet un rendu identique */
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+ul{
+    list-style: none;
 }
 
 a,
@@ -134,23 +146,6 @@ a:hover {
 .d-bloc h6 a,
 .d-bloc p a {
     color: rgba(255, 255, 255, .6);
-}
-
-.d-bloc .a-btn:hover,
-.d-bloc .navbar a:hover,
-.d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
-.d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-xl,
-.d-bloc h1 a:hover,
-.d-bloc h2 a:hover,
-.d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
-.d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -651,7 +646,6 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
 }
 
 .container {
@@ -692,7 +686,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    /*color: #FFFFFF!important;*/
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -771,37 +765,39 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-bg-text-color);
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: var(--primary-bg-color)!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: var(--primary-bg-color);
+    color: var(--primary-bg-text-color)!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: var( --primary-bg-color-hover)!important;
+    color: var( --primary-bg-color-text-hover)!important;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: var( --primary-bg-color-text-hover)!important;
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: var( --primary-bg-color-text-hover)!important;
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: var(--primary-bg-color)!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    background: var( --primary-bg-color-hover)!important;
+    color: var( --primary-bg-color-text-hover)!important;
 }
 
 .icon-dark-slate-blue {
