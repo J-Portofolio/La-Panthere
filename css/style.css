@@ -36,7 +36,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/assets/textures/texture-paper.webp");
+    background: url("../img/assets/textures/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -298,6 +298,7 @@ a:hover {
 
 .navbar-brand img {
     max-height: 200px;
+    width: 220px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -355,6 +356,18 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
+}
+
+.width-100 {
+    width: 100px;
+}
+
+.width-270{
+    width: 270px;
+}
+
+.height-100{
+    height: 100px;
 }
 
 @media (min-width: 768px) {
@@ -806,19 +819,19 @@ h4 {
 }
 
 .bg-dots {
-    background-image: url("img/assets/textures/bg-dots.png");
+    background-image: url("../img/assets/textures/bg-dots.png");
 }
 
 .bg-lines {
-    background-image: url("img/assets/textures/bg-lines.png");
+    background-image: url("../img/assets/textures/bg-lines.png");
 }
 
 .bg-banniere {
-    background-image: url("img/assets/backgrounds/surlignage-de-mots-sur-feuille.webp");
+    background-image: url("../img/assets/backgrounds/surlignage-de-mots-sur-feuille.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/assets/backgrounds/prise-de-note-sur-postit.webp");
+    background-image: url("../img/assets/backgrounds/prise-de-note-sur-postit.webp");
 }
 
 @media (max-width: 1024px) {
