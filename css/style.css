@@ -4,6 +4,9 @@
     --primary-bg-color-hover: #EF763E;
     --primary-bg-text-color: #212121;
     --primary-bg-text-color-hover: #050505;
+
+    --white-bg-text-color: #575757;
+    --dark-bg-text-color: white;
 }
 
 body {
@@ -37,6 +40,18 @@ a:hover {
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
+}
+
+.menu-actif:after{
+    content: "";
+    border-bottom: 5px solid var(--primary-bg-color);
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-actif:hover:after{
+    border-bottom: 5px solid var(--primary-bg-color-hover);
 }
 
 .bloc {
@@ -671,7 +686,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.25em;
 }
 
 .tight-width-whitespace {
@@ -680,7 +695,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 35px;
     font-family: "Open Sans";
 }
 
@@ -699,12 +714,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 30px;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -758,15 +773,25 @@ h4 {
 
 .bgc-white {
     background-color: #FFFFFF;
+    color: var(--white-bg-text-color) !important;
 }
 
 .bgc-dark-slate-blue {
     background-color: #364577;
+    color: var(--dark-bg-text-color);
 }
 
 .bgc-atomic-tangerine {
     background-color: var(--primary-bg-color);
     color: var(--primary-bg-text-color);
+}
+
+.bgc-atomic-tangerine .icon-md{
+    color: var(--primary-bg-text-color) !important;
+}
+
+.bgc-atomic-tangerine .icon-md:hover{
+    color: var(--primary-bg-text-color-hover) !important;
 }
 
 .tc-white {

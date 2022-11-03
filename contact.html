@@ -25,7 +25,7 @@
 					<a class="navbar-brand" href="index.html">
 						<img src="img/logo-avec-texte.svg" alt="Logo de l'agence la Panthère avec son texte" width="220" height="40">
 					</a>
-					<button id="nav-toggle" name="nav-toggle" aria-laabel="Revenir en haut de la page" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<button id="nav-toggle" name="nav-toggle" aria-label="Revenir en haut de la page" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 						<span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
 				</div>
@@ -36,10 +36,7 @@
 								<a href="index.html">Accueil</a>
 							</li>
 							<li>
-								<a href="rapports/28-10-2022-contact.html">Rapport sur la page (Bureau)</a>
-							</li>
-							<li>
-								<a href="rapports/28-10-2022-contact-mobile.html">Rapport sur la page (Mobile)</a>
+								<a class="menu-actif" href="#">Contactez-nous</a>
 							</li>
 						</ul>
 				</nav>
@@ -81,36 +78,44 @@
 									Dans l'attente d'une réutilisation conforme, la balise a donc été remplacée par une version valide.
 									<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 								!-->
-								<fieldset class="form-group">
+								<fieldset>
 									<legend>
 										Vos informations
 									</legend>
-									<label for="name">
-										Nom
-										<span>(requis)</span>
-									</label>
-									<input type="text" id="name" name="nom" class="form-control" required>
+									<div class="form-group">
+										<label for="name">
+											Nom complet
+											<span>(requis)</span>
+										</label>
+										<input type="text" id="name" name="nom" class="form-control" placeholder="Saisissez votre nom et votre prénom" required>
+									</div>
 
-									<label for="email">
-										Adresse email
-										<span>(requis)</span>
-									</label>
-									<input type="email" id="email" name="email" class="form-control" required>
+									<div class="form-group">
+										<label for="email">
+											Adresse email
+											<span>(requis)</span>
+										</label>
+										<input type="email" id="email" name="email" class="form-control" placeholder="Saisissez votre adresse e-mail" required>
+									</div>
 								</fieldset>
 
 								<fieldset class="form-group">
 									<legend>
 										Renseignements complémentaires
 									</legend>
-									<label for="input_504">
-										Comment nous avez-vous connu ?
-									</label>
-									<input type="text" id="input_504" name="reference_source" class="form-control" required>
+									<div class="form-group">
+										<label for="input_504">
+											Comment nous avez-vous connu ?
+										</label>
+										<input type="text" id="input_504" name="reference_source" class="form-control" placeholder="Via un spot publicitaire, bouche à oreille etc..." required>
+									</div>
 
-									<label for="message">
-										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-									</label>
-									<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea>
+									<div class="form-group">
+										<label for="message">
+											Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+										</label>
+										<textarea id="message" name="message" class="form-control" rows="4" cols="50" placeholder="Que voulez-vous proposer à vos clients/visiteur ? N'hésitez-pas à livrer le moindre détail." required></textarea>
+									</div>
 								</fieldset>
 
 								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
@@ -120,8 +125,12 @@
 						</div>
 						<div class="col-sm-12 col-md-6">
 							<h2>Informations pratiques :</h2>
-							<p>Nous envoyer un <strong>email</strong> : <a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a></p>
-							<p>Nous rencontrer à l'<strong>agence de Lyon</strong> : 2 place Sathonay - 69001 Lyon</p>
+							<p>Nous envoyer un <strong>email</strong> :</p>
+							<address><a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a></address>
+
+							<p>Nous rencontrer à l'<strong>agence de Lyon</strong> :</p>
+							<address>2 place Sathonay - 69001 Lyon</address>
+
 							<p><strong>Horaires</strong> : Ouvert de 9h à 18h, du lundi au vendredi</p>
 						</div>
 					</div>
@@ -130,7 +139,7 @@
 			<!-- bloc-7 END -->
 
 			<!-- ScrollToTop Button -->
-			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<button class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></button>
 			<!-- ScrollToTop Button END-->
 
 		</main>
