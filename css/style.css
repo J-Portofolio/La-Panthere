@@ -33,6 +33,10 @@ a:hover {
     cursor: pointer;
 }
 
+blockquote footer {
+    color: var(--primary-bg-text-color-hover) !important;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
