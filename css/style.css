@@ -7,6 +7,7 @@
 
     --white-bg-text-color: #575757;
     --white-bg-text-color-hover: var(--primary-bg-text-color-hover);
+
     --dark-bg-text-color: white;
 }
 
@@ -349,6 +350,10 @@ blockquote footer {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+}
+
+a:focus, button:focus {
+    border: 2px solid black;
 }
 
 .navbar-toggle {
@@ -709,7 +714,8 @@ p {
 }
 
 .h1 {
-    font-size: 35px;
+    font-size: 35px !important;
+    line-height: 1.4em;
     font-family: "Open Sans";
 }
 
@@ -728,15 +734,16 @@ p {
 }
 
 h2 {
-    font-size: 30px;
+    margin-bottom: 25px;
+    font-size: 30px !important;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 25px !important;
+    margin-bottom: 25px;
     text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
+    font-weight: 500;
 }
 
 .med-width-whitespace {
@@ -819,7 +826,7 @@ h4 {
 
 .btn-atomic-tangerine:hover {
     background: var( --primary-bg-color-hover)!important;
-    color: var( --primary-bg-color-text-hover)!important;
+    color: var( --primary-bg-text-color-hover)!important;
 }
 
 .ltc-white {
