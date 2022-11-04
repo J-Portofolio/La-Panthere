@@ -51,6 +51,12 @@ blockquote footer {
     color: var(--white-bg-text-color-hover) !important;
 }
 
+.img-responsive{
+    height: 270px;
+    width: 270px;
+    margin: auto;
+}
+
 .bloc {
     width: 100%;
     clear: both;
@@ -288,6 +294,7 @@ blockquote footer {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+    margin: 25px 0;
 }
 
 #bloc-1-hero h1 {
@@ -652,7 +659,7 @@ a[data-lightbox]:hover img {
 
 .snapshot-lb .lightbox-caption {
     padding: 0;
-    color: rgba(0, 0, 0, .5);
+    color: var(--white-bg-text-color);
     background: none;
 }
 
@@ -793,11 +800,11 @@ h4 {
     color: var(--primary-bg-text-color);
 }
 
-.bgc-atomic-tangerine .icon-md{
+.bgc-atomic-tangerine .icon-lg{
     color: var(--primary-bg-text-color) !important;
 }
 
-.bgc-atomic-tangerine .icon-md:hover{
+.bgc-atomic-tangerine .icon-lg:hover{
     color: var(--primary-bg-text-color-hover) !important;
 }
 
