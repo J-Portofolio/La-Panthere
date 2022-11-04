@@ -6,6 +6,7 @@
     --primary-bg-text-color-hover: #050505;
 
     --white-bg-text-color: #575757;
+    --white-bg-text-color-hover: var(--primary-bg-text-color-hover);
     --dark-bg-text-color: white;
 }
 
@@ -46,16 +47,8 @@ blockquote footer {
     background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
 }
 
-.menu-actif:after{
-    content: "";
-    border-bottom: 5px solid var(--primary-bg-color);
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-.menu-actif:hover:after{
-    border-bottom: 5px solid var(--primary-bg-color-hover);
+.menu-actif{
+    color: var(--white-bg-text-color-hover) !important;
 }
 
 .bloc {
@@ -414,6 +407,16 @@ blockquote footer {
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
+    }
+    .menu-actif:after{
+        content: "";
+        border-bottom: 5px solid var(--primary-bg-color);
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .menu-actif:hover:after{
+        border-bottom: 5px solid var(--primary-bg-color-hover);
     }
 }
 
@@ -782,7 +785,7 @@ h4 {
 
 .bgc-dark-slate-blue {
     background-color: #364577;
-    color: var(--dark-bg-text-color);
+    color: var(--dark-bg-text-color) !important;
 }
 
 .bgc-atomic-tangerine {
@@ -1065,3 +1068,4 @@ h4 {
         text-align: center;
     }
 }
+
