@@ -851,12 +851,8 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots {
-    background-image: url("../img/assets/textures/bg-dots.png");
-}
-
 .bg-lines {
-    background-image: url("../img/assets/textures/bg-lines.png");
+    background-image: url("../img/assets/textures/bg-lines.webp");
 }
 
 .bg-banniere {
