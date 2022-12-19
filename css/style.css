@@ -4,7 +4,10 @@
     --primary-bg-color-hover: #EF763E;
     --primary-bg-text-color: #212121;
     --primary-bg-text-color-hover: #050505;
+    
+    --alpha-bg-header-color: #ffeae1;
 
+    --white-bg-header-color: #b85b30;
     --white-bg-text-color: #575757;
     --white-bg-text-color-hover: var(--primary-bg-text-color-hover);
 
@@ -783,7 +786,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 0.90);
     padding: 40px 40px 40px 40px;
 }
 
@@ -795,6 +798,10 @@ h4 {
 .bgc-white {
     background-color: #FFFFFF;
     color: var(--white-bg-text-color) !important;
+}
+
+.bgc-white h1, .bgc-white h2 {
+    color: var(--white-bg-header-color) !important;
 }
 
 .bgc-dark-slate-blue {
@@ -816,7 +823,7 @@ h4 {
 }
 
 .tc-white {
-    color: var(--primary-bg-color)!important;
+    color: var( --alpha-bg-header-color)!important;
 }
 
 .btn-atomic-tangerine {
