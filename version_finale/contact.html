@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Vous avez une question ou besoin de nous contacter ? Que ce soit sur place, par formulaire, par e-mail ou encore par téléphone, l’agence La Panthère est là pour vous et veillera à éclairer votre lanterne sur le moindre sujet.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+
+		<title>Vous avez une Question ? - Formulaire de Contact - La Panthère</title>
+
+	</head>
+	<body>
+		<!-- bloc-0 -->
+		<header class="bloc bgc-white l-bloc" id="bloc-0">
+			<div class="navbar container bloc-sm">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/logo-avec-texte.svg" alt="Logo de l'agence la Panthère avec son texte" width="220" height="40">
+					</a>
+					<button id="nav-toggle" name="nav-toggle" aria-label="Revenir en haut de la page" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+						<span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<nav class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+						<ul class="site-navigation nav navbar-nav">
+							<li>
+								<a href="index.html">Accueil</a>
+							</li>
+							<li>
+								<a class="menu-actif" href="#">Contactez-nous</a>
+							</li>
+						</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- bloc-0 END -->
+
+		<!-- Principal conteneur -->
+		<main class="page-container">
+
+			<!-- bloc-6 -->
+			<div class="bloc bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="text-center hero-bloc-text">
+								Parlons web design !
+							</h1>
+							<p class="text-center mg-lg tight-width-whitespace">
+								Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+								Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- bloc-6 END -->
+
+			<!-- bloc-7 -->
+			<div class="bloc bgc-white l-bloc" id="bloc-7">
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<h2>Contactez-nous :</h2>
+							<form id="form_1" action="includes/form_1.php">
+								<!--
+									Cette version de la balise form ne passe pas la validation W3C en raison des attributs 'success-msg' et 'fail-msg'
+									qui ne sont pas autorisés selon les critères de cette même validation.
+									Dans l'attente d'une réutilisation conforme, la balise a donc été remplacée par une version valide.
+									<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+								!-->
+								<fieldset>
+									<legend>
+										Vos informations
+									</legend>
+									<div class="form-group">
+										<label for="name">
+											Nom complet
+											<span>(requis)</span>
+										</label>
+										<input type="text" id="name" name="nom" class="form-control" placeholder="Saisissez votre nom et votre prénom" required>
+									</div>
+
+									<div class="form-group">
+										<label for="email">
+											Adresse email
+											<span>(requis)</span>
+										</label>
+										<input type="email" id="email" name="email" class="form-control" placeholder="Saisissez votre adresse e-mail" required>
+									</div>
+								</fieldset>
+
+								<fieldset class="form-group">
+									<legend>
+										Renseignements complémentaires
+									</legend>
+									<div class="form-group">
+										<label for="input_504">
+											Comment nous avez-vous connu ?
+										</label>
+										<input type="text" id="input_504" name="reference_source" class="form-control" placeholder="Via un spot publicitaire, bouche à oreille etc..." required>
+									</div>
+
+									<div class="form-group">
+										<label for="message">
+											Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+										</label>
+										<textarea id="message" name="message" class="form-control" rows="4" cols="50" placeholder="Que voulez-vous proposer à vos clients/visiteurs ? N'hésitez-pas à livrer le moindre détail." required></textarea>
+									</div>
+								</fieldset>
+
+								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+									Envoyer
+								</button>
+							</form>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<h2>Informations pratiques :</h2>
+							<p>Nous envoyer un <strong>email</strong> :</p>
+							<address><a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a></address>
+
+							<p>Nous rencontrer à l'<strong>agence de Lyon</strong> :</p>
+							<address>2 place Sathonay - 69001 Lyon</address>
+
+							<p><strong>Horaires</strong> : Ouvert de 9h à 18h, du lundi au vendredi</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- bloc-7 END -->
+
+			<!-- ScrollToTop Button -->
+			<button class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')" aria-label="Revenir en haut de la page"><span class="fa fa-chevron-up"></span></button>
+			<!-- ScrollToTop Button END-->
+
+		</main>
+		<!-- Principal conteneur END -->
+
+		<!-- Footer - bloc-8 -->
+		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+			<div class="container bloc-sm">
+				<nav class="row" aria-label="Navigation vers les backlinks">
+					<div class="col-sm-12">
+						<h2 class="text-center col-sm-12">
+							La Panthère est ausssi sur les réseaux sociaux.
+						</h2>
+						<ul class="row row-no-gutters text-center social">
+							<li class="col-sm-3">
+								<a class="social" href="https://twitter.com" aria-label="Twitter"><span class="fa fa-twitter icon-lg"></span></a>
+							</li>
+							<li class="col-sm-3">
+								<a class="social" href="https://facebook.com" aria-label="Facebook"><span class="fa fa-facebook icon-lg"></span></a>
+							</li>
+							<li class="col-sm-3">
+								<a class="social" href="https://dribbble.com" aria-label="Dribbble"><span class="fa fa-dribbble icon-lg"></span></a>
+							</li>
+							<li class="col-sm-3">
+								<a class="social" href="https://instagram.com" aria-label="Instagram"><span class="fa fa-instagram icon-lg"></span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</footer>
+		<!-- Footer - bloc-8 END -->
+		<script src="./js/jquery-2.1.0.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/blocs.min.js" async></script>
+		<script src="./js/jqBootstrapValidation.min.js" async></script>
+		<script src="./js/formHandler.min.js" async></script>
+	</body>
+</html>
